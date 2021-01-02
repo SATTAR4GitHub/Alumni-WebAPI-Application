@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AlumniAPI.Data;
 using AlumniAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AlumniAPI.Controllers
 {
@@ -19,20 +21,20 @@ namespace AlumniAPI.Controllers
         // End-point for all users
         // api/appUsers
         [HttpGet]
-        public ActionResult<IEnumerable<AppUser>> GetUsers()
+        public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
-          var appUsers = _context.applicationUsers.ToList();   
+          var appUsers = await _context.applicationUsers.ToListAsync();   
 
           return appUsers;
-        }
+        } 
 
 
         // End-point for a specific user
-        // api/appUsers/3
+        // api/appUsers/2
         [HttpGet("{Id}")]
-        public ActionResult<AppUser> GetUser(int id)
+        public async Task<ActionResult<AppUser>> GetUser(int id)
         {
-          return _context.applicationUsers.Find(id);   
+          return await _context.applicationUsers.FindAsync(id);   
          
         }
 
