@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OuGMq8pQe0rD4O3rBFBssl7uM4a1t3FP8E985SwIQpS/Ma1/Ax6U8PDdehVQBFYBOXjNM7QdIxzTWDcgph/sEw==",
+  "dgSpecHash": "ZwbWYULyxsk8cpd6Cts1qkyZSCyfuIMVW8Y+vsv1lpNAxfd5q1EmD3ItpNEL4biw/Kx+7j3LlFNUF2A/F8Mm4w==",
   "success": true,
   "projectFilePath": "C:\\AlumniApp\\AlumniAPI\\AlumniAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\satta\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
+    "C:\\Users\\satta\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
@@ -47,6 +49,7 @@
     "C:\\Users\\satta\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\satta\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\satta\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []

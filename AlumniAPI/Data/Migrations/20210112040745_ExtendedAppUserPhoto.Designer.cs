@@ -3,14 +3,16 @@ using System;
 using AlumniAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlumniAPI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210112040745_ExtendedAppUserPhoto")]
+    partial class ExtendedAppUserPhoto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,12 +24,6 @@ namespace AlumniAPI.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Achievements")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Batch")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("City")
                         .HasColumnType("TEXT");
 
@@ -37,16 +33,7 @@ namespace AlumniAPI.Data.Migrations
                     b.Property<DateTime>("Created")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("CurrentPosition")
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("EmploymentHistory")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
@@ -65,12 +52,6 @@ namespace AlumniAPI.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LookingFor")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Memory")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("OtherDetails")
                         .HasColumnType("TEXT");
 
                     b.Property<byte[]>("PasswordHash")
